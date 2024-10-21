@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #a0c4ff;
+}
+
+.icon-burger i{
+display: none;
+color: rgb(255, 255, 255);
+font-size: 200%;
+z-index: 101;
+cursor: pointer;
+}
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    background: linear-gradient(245.59deg, rgb(23, 23, 32) 0%, rgb(108, 95, 179) 25%);
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h5 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.container-interactivo a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+}
+
+.container-interactivo a:hover {
+    transform: translateY(-5px);
+}
+
+.hero-img img {
+    width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.hero-img img:hover {
+    transform: scale(1.05);
+}
+
+
+.proyectos {
+    padding: 60px 10%;
+    background-color: #1b1b1b;
+}
+
+.proyectos h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cont_proyectos {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.proyecto-card {
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #2c2c2c;
+    transition: transform 0.3s;
+}
+
+.proyecto-card img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.proyec-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.proyecto-card:hover img {
+    opacity: 0.7;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-10px);
+}
+
+
+.formulario_contacto {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #000;
+}
+
+.formulario_contacto h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.formulario_contacto input,
+.formulario_contacto textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1b1b1b;
+    color: #fff;
+}
+
+.formulario_contacto button {
+    padding: 10px 20px;
+    background-color: #4a4a4a;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario_contacto button:hover {
+    background-color: #a0c4ff;
+}
+
+
+@media (max-width: 768px) {
+    .nav{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    .icon-burger i{
+        display: block;
+        color: rgb(255, 255, 255);
+        font-size: 200%;
+        z-index: 101;
+        cursor: pointer;
+    }
+    
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+
+    }
+
+    .hero-text h5 {
+        margin-top: 2px;
+    }
+
+    .hero-img img {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+
+    .cont_proyectos  {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyecto-card {
+        width: 100%;
+    }
+}
